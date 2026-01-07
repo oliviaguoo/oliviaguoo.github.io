@@ -92,43 +92,32 @@
         }
         
         .books-list {
-            list-style: none;
-            padding-left: 0;
-            margin-top: 1.5rem;
+            list-style: disc;
+            padding-left: 2rem;
+            margin-top: 1rem;
         }
         
         .book-item {
-            margin-bottom: 2.5rem;
-            padding-bottom: 2rem;
-            border-bottom: 1px solid #f0f0f0;
+            margin-bottom: 0.5rem;
+            color: #333333;
         }
         
-        .book-item:last-child {
-            border-bottom: none;
+        .book-info {
+            display: inline;
         }
         
         .book-title {
             font-weight: 600;
             color: #1a1a1a;
-            font-size: 1.2rem;
-            margin-bottom: 0.25rem;
         }
         
         .book-author {
             color: #666666;
-            font-size: 0.95rem;
-            margin-bottom: 0.5rem;
+            font-style: italic;
         }
         
         .book-rating {
             color: #999999;
-            font-size: 0.9rem;
-            margin-bottom: 0.75rem;
-        }
-        
-        .book-review {
-            color: #333333;
-            line-height: 1.7;
         }
         
         a {
@@ -178,112 +167,62 @@
         
         <ul class="books-list">
             <li class="book-item">
-                <div class="book-title">Currently re-Reading: To Kill a Mockingbird</div>
-                <div class="book-author">Harper Lee</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Currently re-Reading: To Kill a Mockingbird</span> by <span class="book-author">Harper Lee</span>
             </li>
         </ul>
         
         <h2>2026</h2>
         <ul class="books-list">
             <li class="book-item">
-                <div class="book-title">The Joy Luck Club</div>
-                <div class="book-author">Amy Tan</div>
-                <div class="book-rating">★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">The Joy Luck Club</span> by <span class="book-author">Amy Tan</span> <span class="book-rating">★★★★</span>
             </li>
+        </ul>
         
         <h2>2025</h2>
         <ul class="books-list">
             <li class="book-item">
-                <div class="book-title">The Sympathizer</div>
-                <div class="book-author">Viet Thanh Nguyen</div>
-                <div class="book-rating">★★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">The Sympathizer</span> by <span class="book-author">Viet Thanh Nguyen</span> <span class="book-rating">★★★★★</span>
             </li>
             <li class="book-item">
-                <div class="book-title">Taiwan Travelogue</div>
-                <div class="book-author">Yang Shuang-Zi</div>
-                <div class="book-rating">★★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Taiwan Travelogue</span> by <span class="book-author">Yang Shuang-Zi</span> <span class="book-rating">★★★★★</span>
             </li>
             <li class="book-item">
-                <div class="book-title">Soul of a Citizen: Living With Conviction in a Cynical Time</div>
-                <div class="book-author">Paul Rogat Loeb</div>
-                <div class="book-rating">★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Soul of a Citizen: Living With Conviction in a Cynical Time</span> by <span class="book-author">Paul Rogat Loeb</span> <span class="book-rating">★★★</span>
             </li>
             <li class="book-item">
-                <div class="book-title">this is where it ends</div>
-                <div class="book-author">Marieke Nijkamp</div>
-                <div class="book-rating">★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">this is where it ends</span> by <span class="book-author">Marieke Nijkamp</span> <span class="book-rating">★★</span>
             </li>
             <li class="book-item">
-                <div class="book-title">Sunrise on the Reaping</div>
-                <div class="book-author">Suzanne Collins</div>
-                <div class="book-rating">★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Sunrise on the Reaping</span> by <span class="book-author">Suzanne Collins</span> <span class="book-rating">★★★★</span>
             </li>
         </ul>
 
         <h2>2024 Favorites</h2>
         <ul class="books-list">
             <li class="book-item">
-                <div class="book-title">Beloved</div>
-                <div class="book-author">Toni Morrison</div>
-                <div class="book-rating">★★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Beloved</span> by <span class="book-author">Toni Morrison</span> <span class="book-rating">★★★★★</span>
             </li>
             <li class="book-item">
-                <div class="book-title">A Christmas Carol</div>
-                <div class="book-author">Charles Dickens</div>
-                <div class="book-rating">★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">A Christmas Carol</span> by <span class="book-author">Charles Dickens</span> <span class="book-rating">★★★★</span>
             </li>
             <li class="book-item">
-                <div class="book-title">The Seven Husbands of Evelyn Hugo</div>
-                <div class="book-author">Taylor Jenkins Reid</div>
-                <div class="book-rating">★★★★</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">The Seven Husbands of Evelyn Hugo</span> by <span class="book-author">Taylor Jenkins Reid</span> <span class="book-rating">★★★★</span>
             </li>
         </ul>
         
         <h2>Other Favorites</h2>
         <ul class="books-list">
             <li class="book-item">
-                <div class="book-title">Purple Hibiscus</div>
-                <div class="book-author">Chimamanda Ngozi Adichie</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Purple Hibiscus</span> by <span class="book-author">Chimamanda Ngozi Adichie</span>
             </li>
             <li class="book-item">
-                <div class="book-title">Six of Crows</div>
-                <div class="book-author">Leigh Bardugo</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">Six of Crows</span> by <span class="book-author">Leigh Bardugo</span>
             </li>
             <li class="book-item">
-                <div class="book-title">The Nickel Boys</div>
-                <div class="book-author">Colson Whitehead</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">The Nickel Boys</span> by <span class="book-author">Colson Whitehead</span>
             </li>
             <li class="book-item">
-                <div class="book-title">The Road</div>
-                <div class="book-author">Cormac McCarthy</div>
-                <p class="book-review">
-                </p>
+                <span class="book-title">The Road</span> by <span class="book-author">Cormac McCarthy</span>
             </li>
         </ul>
     </main>
