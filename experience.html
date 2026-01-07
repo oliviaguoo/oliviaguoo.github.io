@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Experience - Olivia Guo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 2rem 0 1rem 0;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #e0e0e0;
+            z-index: 100;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .site-title {
+            font-family: 'Canadienne Brusher', cursive;
+            font-size: 3rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+        
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid #1a1a1a;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #666666;
+            border-bottom-color: #666666;
+        }
+        
+        main {
+            max-width: 1200px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            color: #000000;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        
+        .content-wrapper {
+            display: grid;
+            grid-template-columns: 350px 1fr;
+            gap: 3rem;
+            align-items: start;
+        }
+        
+        .left-panel {
+            position: sticky;
+            top: 140px;
+        }
+        
+        .year-section {
+            margin-bottom: 2.5rem;
+        }
+        
+        .year-header {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .year-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .experience-list {
+            list-style: none;
+            padding-left: 0;
+        }
+        
+        .experience-item {
+            margin-bottom: 0.5rem;
+            cursor: pointer;
+            padding: 0.5rem;
+            border-radius: 4px;
+            transition: background-color 0.2s;
+        }
+        
+        .experience-item:hover {
+            background-color: #f5f5f5;
+        }
+        
+        .experience-item.active {
+            background-color: #f0f0f0;
+            font-weight: 500;
+        }
+        
+        .experience-type {
+            font-size: 0.85rem;
+            color: #666666;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+            margin-bottom: 0.25rem;
+        }
+        
+        .experience-name {
+            color: #1a1a1a;
+        }
+        
+        .right-panel {
+            min-height: 400px;
+        }
+        
+        .detail-card {
+            display: none;
+            animation: fadeIn 0.3s ease-in;
+        }
+        
+        .detail-card.active {
+            display: block;
+        }
+        
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+                transform: translateY(10px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+        
+        .detail-header {
+            margin-bottom: 1.5rem;
+            padding-bottom: 1rem;
+            border-bottom: 2px solid #1a1a1a;
+        }
+        
+        .detail-title {
+            font-size: 1.8rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.5rem;
+        }
+        
+        .detail-subtitle {
+            font-size: 1.1rem;
+            color: #333333;
+            margin-bottom: 0.25rem;
+        }
+        
+        .detail-date {
+            color: #666666;
+            font-size: 0.95rem;
+        }
+        
+        .detail-section {
+            margin-bottom: 1.5rem;
+        }
+        
+        .detail-section h3 {
+            font-size: 1.1rem;
+            font-weight: 600;
+            color: #1a1a1a;
+            margin-bottom: 0.75rem;
+        }
+        
+        .detail-section ul {
+            list-style: disc;
+            padding-left: 1.5rem;
+        }
+        
+        .detail-section li {
+            margin-bottom: 0.5rem;
+            color: #333333;
+        }
+        
+        .detail-section p {
+            color: #333333;
+            line-height: 1.7;
+        }
+        
+        .placeholder-message {
+            color: #999999;
+            font-style: italic;
+            text-align: center;
+            padding: 3rem;
+        }
+        
+        @media (max-width: 968px) {
+            .content-wrapper {
+                grid-template-columns: 1fr;
+                gap: 2rem;
+            }
+            
+            .left-panel {
+                position: static;
+            }
+            
+            .site-title {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="hobbies.html">Hobbies</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Experience</h1>
+        
+        <div class="content-wrapper">
+            <div class="left-panel">
+                <div class="year-section">
+                    <div class="year-header">
+                        <h2 class="year-title">2025</h2>
+                    </div>
+                    <ul class="experience-list">
+                        <li class="experience-item" data-target="spiro">
+                            <div class="experience-type">Work Experience</div>
+                            <div class="experience-name">Spiro Robotics</div>
+                        </li>
+                        <li class="experience-item" data-target="micromouse">
+                            <div class="experience-type">Project</div>
+                            <div class="experience-name">Micromouse</div>
+                        </li>
+                        <li class="experience-item" data-target="treble">
+                            <div class="experience-type">Project</div>
+                            <div class="experience-name">Treble Boost Effects Box</div>
+                        </li>
+                    </ul>
+                </div>
+                
+                <div class="year-section">
+                    <div class="year-header">
+                        <h2 class="year-title">2024</h2>
+                    </div>
+                    <ul class="experience-list">
+                        <li class="experience-item" data-target="berkeley-lab">
+                            <div class="experience-type">Research</div>
+                            <div class="experience-name">Berkeley Imaging Systems Lab</div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="right-panel">
+                <div class="placeholder-message">
+                    ← Select an experience to view details
+                </div>
+                
+                <div class="detail-card" id="spiro">
+                    <div class="detail-header">
+                        <h2 class="detail-title">Spiro Robotics</h2>
+                        <div class="detail-subtitle">R&D Systems Engineering Intern</div>
+                        <div class="detail-date">May 2025 – August 2025 | Castro Valley, CA</div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Overview</h3>
+                        <p>Worked on firmware development and hardware optimization for assistive robotics devices, focusing on joystick controls and servo motor systems.</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Key Contributions</h3>
+                        <ul>
+                            <li>Developed Arduino-based firmware for joystick controls, implementing CRC protocol between device and its external display, and optimized joystick input to motor sensitivity, eliminating jerky movements in articulation.</li>
+                            <li>Spearheaded a new feature initiative by engineering a servo motor position tracking system with low-pass filtering to reduce signal noise, modifying hardware, and writing Arduino C++ scripts for data analysis and optimization.</li>
+                            <li>Repaired Python manufacturing scripts for new device firmware, added save/load features, and created executables to simplify quality control tests; used to validate 50+ device functionalities per ISO 7376 and FDA 510(k) standards.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="detail-card" id="micromouse">
+                    <div class="detail-header">
+                        <h2 class="detail-title">Autonomous Maze-Solving Car</h2>
+                        <div class="detail-subtitle">IEEE "Micromouse" Competition</div>
+                        <div class="detail-date">Fall 2025</div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Project Overview</h3>
+                        <p>Design and build an autonomous robotic "mouse" using microelectronics and CircuitPython programming that negotiates a maze of standard dimensions from a specified corner to the center in the shortest time.</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Technical Details</h3>
+                        <ul>
+                            <li>Regulate position using sensors, speed through PID control, and efficient paths with floodfill algorithm.</li>
+                            <li>Add more details about your hardware choices, sensor implementation, motor control strategy, etc.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="detail-card" id="treble">
+                    <div class="detail-header">
+                        <h2 class="detail-title">Treble Boost Effects Box</h2>
+                        <div class="detail-subtitle">Analog Circuit Design Project</div>
+                        <div class="detail-date">Spring 2025</div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Project Overview</h3>
+                        <p>Engineered a circuit that takes the output signal from an electric guitar, enhances its treble content, and raises its amplitude to provide a more pleasant, distorted tone than from an amplifier alone.</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Design & Testing</h3>
+                        <ul>
+                            <li>Modeled effects by deriving a symbolic transfer function, selecting circuit elements, and simulation via SPICE.</li>
+                            <li>Tested circuit functionality using an oscilloscope and used a network analyzer to confirm the frequency response.</li>
+                        </ul>
+                    </div>
+                </div>
+                
+                <div class="detail-card" id="berkeley-lab">
+                    <div class="detail-header">
+                        <h2 class="detail-title">Berkeley Imaging Systems Laboratory</h2>
+                        <div class="detail-subtitle">Undergraduate Researcher</div>
+                        <div class="detail-date">April 2024 – Present | Berkeley, CA</div>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Research Focus</h3>
+                        <p>Engineering a low-pass pre-amplifier with noise matching: the first-stage analog front-end for the Magnetic Particle Imaging system, a pre-clinical imaging modality with superior resolution, contrast, and safety to nuclear imaging.</p>
+                    </div>
+                    
+                    <div class="detail-section">
+                        <h3>Key Contributions</h3>
+                        <ul>
+                            <li>Managed a team of 10+ undergraduates to synthesize, extract, and purify 100+ iron oxide imaging tracer samples by filming instructional videos, writing a liquid-liquid extraction SOP, and delegating shifts for two semesters.</li>
+                            <li>Designed a self-assembling DNA-based drug delivery device using sCADnano (CAD-based nano-scale application) that allows for a 200% increase in successful drug encapsulation; verified in vitro through 100+ experiments.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    
+    <script>
+        const experienceItems = document.querySelectorAll('.experience-item');
+        const detailCards = document.querySelectorAll('.detail-card');
+        const placeholder = document.querySelector('.placeholder-message');
+        
+        experienceItems.forEach(item => {
+            item.addEventListener('click', () => {
+                const targetId = item.getAttribute('data-target');
+                const targetCard = document.getElementById(targetId);
+                const isCurrentlyActive = item.classList.contains('active');
+                
+                // Remove active class from all items
+                experienceItems.forEach(i => i.classList.remove('active'));
+                
+                // Hide all detail cards
+                detailCards.forEach(card => card.classList.remove('active'));
+                
+                // If clicking the same item, close it and show placeholder
+                if (isCurrentlyActive) {
+                    placeholder.style.display = 'block';
+                } else {
+                    // Otherwise, show the new item
+                    item.classList.add('active');
+                    placeholder.style.display = 'none';
+                    if (targetCard) {
+                        targetCard.classList.add('active');
+                    }
+                }
+            });
+        });
+    </script>
+</body>
+</html>
