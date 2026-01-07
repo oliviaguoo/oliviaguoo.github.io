@@ -93,6 +93,25 @@
         .intro-section {
             margin-bottom: 3rem;
         }
+
+        a:link {
+          color: **black**; /* Unvisited link */
+          text-decoration: none; /* Optional: removes the default underline */
+        }
+        
+        a:visited {
+          color: **black**; /* Visited link */
+          text-decoration: none;
+        }
+        
+        a:hover {
+          color: **gray**; /* Mouse over link */
+        }
+        
+        a:active {
+          color: **gray**; /* Selected link */
+          text-decoration: underline;
+        }
         
         /* Responsive design for mobile */
         @media (max-width: 768px) {
@@ -126,7 +145,7 @@
         <div class="intro-section">
             <h1>Olivia Guo</h1>
             <p>I'm an undergraduate @ <a href="https://www.berkeley.edu/" target="_blank"><u>UC Berkeley</u></a> studying EECS (<a href="https://eecs.berkeley.edu/"><u>electrical engineering & computer science</u></a>) and <a href="https://bioeng.berkeley.edu/"><u>Bioengineering</u></a>.</p>
-            <p><br>I love all things biomed x hardware: surgical robotics, medical imaging, sports wearable technology, and more :)</p>
+            <p>I'm interested in the intersection of biology & hardware: surgical robotics, medical imaging, sports wearable technology, and more :)</p>
             <p>Currently, I am...</p>
                 <ul>
                     <li>designing analog frontends @ <a href="https://bisl.studentorg.berkeley.edu/" target="_blank"><u>Berkeley Imaging Systems Laboratory</u></a> (under Dr. Steven Conolly).</li>
