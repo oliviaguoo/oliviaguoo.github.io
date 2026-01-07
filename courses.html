@@ -1,10 +1,339 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+<head>
     <meta charset="UTF-8">
-    <title>Courses</title>
-  </head>
-  <body>
-    <h1>Courses</h1>
-  </body>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Courses - Olivia Guo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 2rem 0 1rem 0;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .site-title {
+            font-family: 'Canadienne Brusher', cursive;
+            font-size: 3rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+        
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid #1a1a1a;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #666666;
+            border-bottom-color: #666666;
+        }
+        
+        main {
+            max-width: 1000px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            color: #000000;
+            margin-bottom: 2rem;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        
+        .semester {
+            margin-bottom: 2.5rem;
+        }
+        
+        .semester-header {
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .semester-title {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #1a1a1a;
+        }
+        
+        .course-list {
+            list-style: disc;
+            padding-left: 2rem;
+        }
+        
+        .course {
+            margin-bottom: 0.5rem;
+        }
+        
+        .course-code {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+        }
+        
+        .course-name {
+            color: #333333;
+        }
+        
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="extra.html">Extra</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Coursework</h1>
+        <p>keep scrolling down & you'll find the most diverse (career-crisis coded) set of STEM classes in the history of uc berkeley c:</p>
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Spring 2026</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">EECS 140</span>
+                    <span class="course-name">Linear Integrated Circuits</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">EECS 151</span>
+                    <span class="course-name">Digital Design and Integrated Circuits</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">EECS 151LA</span>
+                    <span class="course-name">Application Specific Integrated Circuits (ASIC) Laboratory</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">EECS 152</span>
+                    <span class="course-name">Computer Architecture and Engineering</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Fall 2025</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">EE105</span>
+                    <span class="course-name">Microelectronic Devices and Circuits</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CS61C</span>
+                    <span class="course-name">Great Ideas of Computer Architecture (Machine Structures)</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CS70</span>
+                    <span class="course-name">Discrete Mathematics and Probability Theory</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CS195</span>
+                    <span class="course-name">Social Implications of Computer Technology</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">EE198</span>
+                    <span class="course-name">Directed Group Study for Advanced Undergraduates (IEEE "Micromouse" Project)</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Spring 2025</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">BIOENG104</span>
+                    <span class="course-name">Biological Transport Phenomena</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CS61B</span>
+                    <span class="course-name">Data Structures</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">MATSCI45+L</span>
+                    <span class="course-name">Properties of Materials w/ Laboratory</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">BIO1A+L</span>
+                    <span class="course-name">General Biology w/ Laboratory</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Fall 2024</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">CHEM3A</span>
+                    <span class="course-name">Chemical Structure and Reactivity</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CHEM3AL</span>
+                    <span class="course-name">Organic Chemistry Laboratory</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">EECS16B</span>
+                    <span class="course-name">Designing Information Devices and Systems II</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">PHYS7B</span>
+                    <span class="course-name">Physics for Scientists and Engineers (Electromagnetism)</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">PBHLTH142</span>
+                    <span class="course-name">Probability and Statistics in Biology and Public Health</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CS365</span>
+                    <span class="course-name">Instructional Methods in Computer Science</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">BIOENG199</span>
+                    <span class="course-name">Supervised Independent Study (Conolly Lab)</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">PBHLTH198</span>
+                    <span class="course-name">Healthcare Interpretation Decal (Mandarin)</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Summer 2024</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">PSYCH1</span>
+                    <span class="course-name">General Psychology</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">SOCIOL3AC</span>
+                    <span class="course-name">Principles of Sociology: American Cultures</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Spring 2024</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">CS61A</span>
+                    <span class="course-name">Structure and Interpretation of Computer Programs</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">MATH54</span>
+                    <span class="course-name">Linear Algebra and Differential Equations</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">PHYS7A</span>
+                    <span class="course-name">Physics for Scientists and Engineers (Mechanics)</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">COMLITR1B</span>
+                    <span class="course-name">English Composition in Connection with the Reading of World Literature</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">BIOENG25</span>
+                    <span class="course-name">Seminar: Careers in Biotechnology</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">PBHLTH197</span>
+                    <span class="course-name">Field Study in Public Health (internship @ BOSS)</span>
+                </li>
+            </ul>
+        </div>
+
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">Fall 2023</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">BIOENG10</span>
+                    <span class="course-name">Biomedicine for Engineers</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">BIOENG26</span>
+                    <span class="course-name">Seminar: Introduction to Bioengineering</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">EECS16A</span>
+                    <span class="course-name">Designing Informationi Devices and Systems I</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">CHEM1A+L</span>
+                    <span class="course-name">General Chemistry w/ Laboratory</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">MATH53</span>
+                    <span class="course-name">Multivariable Calculus</span>
+                </li>
+            </ul>
+        </div>
+    </main>
+</body>
 </html>
