@@ -25,7 +25,6 @@
             position: sticky;
             top: 0;
             border-bottom: 1px solid #e0e0e0;
-            z-index: 100;
         }
         
         .header-content {
@@ -66,7 +65,7 @@
         }
         
         main {
-            max-width: 1200px;
+            max-width: 1000px;
             margin: 3rem auto;
             padding: 0 2rem;
         }
@@ -78,176 +77,43 @@
             font-size: 2rem;
         }
         
-        .content-wrapper {
-            display: grid;
-            grid-template-columns: 350px 1fr;
-            gap: 3rem;
-            align-items: start;
-        }
-        
-        .left-panel {
-            position: sticky;
-            top: 140px;
-        }
-        
-        .year-section {
+        .semester {
             margin-bottom: 2.5rem;
         }
         
-        .year-header {
+        .semester-header {
             margin-bottom: 1rem;
             padding-bottom: 0.5rem;
             border-bottom: 1px solid #e0e0e0;
         }
         
-        .year-title {
+        .semester-title {
             font-size: 1.3rem;
             font-weight: 600;
             color: #1a1a1a;
         }
         
-        .experience-list {
-            list-style: none;
-            padding-left: 0;
-        }
-        
-        .experience-item {
-            margin-bottom: 0.5rem;
-            cursor: pointer;
-            padding: 0.5rem;
-            border-radius: 4px;
-            transition: background-color 0.2s;
-        }
-        
-        .experience-item:hover {
-            background-color: #f5f5f5;
-        }
-        
-        .experience-item.active {
-            background-color: #f0f0f0;
-            font-weight: 500;
-        }
-        
-        .experience-type {
-            font-size: 0.85rem;
-            color: #666666;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-            margin-bottom: 0.25rem;
-        }
-        
-        .experience-name {
-            color: #1a1a1a;
-        }
-        
-        .right-panel {
-            min-height: 400px;
-        }
-        
-        .detail-card {
-            display: none;
-            animation: fadeIn 0.3s ease-in;
-        }
-        
-        .detail-card.active {
-            display: block;
-        }
-
-        a {
-            color: #1a1a1a;
-            text-decoration: underline;
-        }
-        
-        a:hover, a:visited:hover {
-            color: #666666;
-        }
-        
-        a:visited {
-            color: #1a1a1a;
-        }
-        
-        a:active {
-            color: #666666;
-        }
-        
-        @keyframes fadeIn {
-            from {
-                opacity: 0;
-                transform: translateY(10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        .detail-header {
-            margin-bottom: 1.5rem;
-            padding-bottom: 1rem;
-            border-bottom: 2px solid #1a1a1a;
-        }
-        
-        .detail-title {
-            font-size: 1.8rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 0.5rem;
-        }
-        
-        .detail-subtitle {
-            font-size: 1.1rem;
-            color: #333333;
-            margin-bottom: 0.25rem;
-        }
-        
-        .detail-date {
-            color: #666666;
-            font-size: 0.95rem;
-        }
-        
-        .detail-section {
-            margin-bottom: 1.5rem;
-        }
-        
-        .detail-section h3 {
-            font-size: 1.1rem;
-            font-weight: 600;
-            color: #1a1a1a;
-            margin-bottom: 0.75rem;
-        }
-        
-        .detail-section ul {
+        .course-list {
             list-style: disc;
-            padding-left: 1.5rem;
+            padding-left: 2rem;
         }
         
-        .detail-section li {
+        .course {
             margin-bottom: 0.5rem;
+        }
+        
+        .course-code {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 1rem;
+            margin-right: 0.5rem;
+        }
+        
+        .course-name {
             color: #333333;
         }
         
-        .detail-section p {
-            color: #333333;
-            line-height: 1.7;
-        }
-        
-        .placeholder-message {
-            color: #999999;
-            font-style: italic;
-            text-align: center;
-            padding: 3rem;
-        }
-        
-        @media (max-width: 968px) {
-            .content-wrapper {
-                grid-template-columns: 1fr;
-                gap: 2rem;
-            }
-            
-            .left-panel {
-                position: static;
-            }
-            
+        @media (max-width: 768px) {
             .site-title {
                 font-size: 2.5rem;
             }
@@ -266,10 +132,10 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="guo-olivia-resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="hobbies.html">Hobbies</a></li>
+                    <li><a href="extra.html">Extra</a></li>
                 </ul>
             </nav>
         </div>
@@ -277,158 +143,116 @@
     
     <main>
         <h1>Experience</h1>
+        <p>work & play !</p>
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">2026</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">coming soon...</span>
+                    <span class="course-name">...</span>
+                </li>
+            </ul>
+        </div>
         
-        <div class="content-wrapper">
-            <div class="left-panel">
-                <div class="year-section">
-                    <div class="year-header">
-                        <h2 class="year-title">2025</h2>
-                    </div>
-                    <ul class="experience-list">
-                        <li class="experience-item" data-target="spiro">
-                            <div class="experience-type">Work Experience</div>
-                            <div class="experience-name">R&D Systems Engineer @ Spiro Robotics</div>
-                        </li>
-                        <li class="experience-item" data-target="micromouse">
-                            <div class="experience-type">Project</div>
-                            <div class="experience-name">IEEE "Micromouse"</div>
-                        </li>
-                    </ul>
-                </div>
-                
-                <div class="year-section">
-                    <div class="year-header">
-                        <h2 class="year-title">2024</h2>
-                    </div>
-                    <ul class="experience-list">
-                        <li class="experience-item" data-target="berkeley-lab">
-                            <div class="experience-type">Research</div>
-                            <div class="experience-name">Berkeley Imaging Systems Lab</div>
-                        </li>
-                    </ul>
-                </div>
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">2025</h2>
             </div>
-            
-            <div class="right-panel">
-                <div class="placeholder-message">
-                    ← Select an experience to view details
-                </div>
-                
-                <div class="detail-card" id="spiro">
-                    <div class="detail-header">
-                        <h2 class="detail-title">Spiro Robotics</h2>
-                        <div class="detail-subtitle">R&D Systems Engineering Intern</div>
-                        <div class="detail-date">May 2025 – August 2025 (11 weeks) | Castro Valley, CA</div>
-                    </div>
-                    <div class="detail-section">
-                        <p><a href="https://spirorobotics.com/"><u>Spiro Robotics</u></a> is creating a dual video endoscopy platform for image-guided navigation & advanced intubation control.</p>
-                    </div>
-                    <div class="detail-section">
-                        <ul>
-                            <li>Developed Arduino-based firmware for joystick controls, implementing communication protocol between device and its external display, and optimized joystick input to motor sensitivity.</li>
-                            <li>Spearheaded a new feature initiative by engineering a servo motor position tracking system, writing Arduino C++ scripts for data analysis and optimizing signal noise reduction.</li>
-                            <li>Repaired Python manufacturing scripts for new device firmware, added save/load features, and created executables used to validate 50+ device functionalities per ISO 7376 and FDA 510(k) standards.</li>
-                            <li>Led kiosk-mode Ubuntu OS deployment for medical display and wrote Linux setup procedure for cybersecurity compliance.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="detail-card" id="micromouse">
-                    <div class="detail-header">
-                        <h2 class="detail-title">Autonomous Maze-Solving Car</h2>
-                        <div class="detail-subtitle">IEEE "Micromouse" Competition</div>
-                        <div class="detail-date">Fall 2025</div>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>Project Overview</h3>
-                        <p>Design and build an autonomous robotic "mouse" using microelectronics and CircuitPython programming that negotiates a maze of standard dimensions from a specified corner to the center in the shortest time.</p>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>Technical Details</h3>
-                        <ul>
-                            <li>Regulate position using sensors, speed through PID control, and efficient paths with floodfill algorithm.</li>
-                            <li>Add more details about your hardware choices, sensor implementation, motor control strategy, etc.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="detail-card" id="treble">
-                    <div class="detail-header">
-                        <h2 class="detail-title">Treble Boost Effects Box</h2>
-                        <div class="detail-subtitle">Analog Circuit Design Project</div>
-                        <div class="detail-date">Spring 2025</div>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>Project Overview</h3>
-                        <p>Engineered a circuit that takes the output signal from an electric guitar, enhances its treble content, and raises its amplitude to provide a more pleasant, distorted tone than from an amplifier alone.</p>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>Design & Testing</h3>
-                        <ul>
-                            <li>Modeled effects by deriving a symbolic transfer function, selecting circuit elements, and simulation via SPICE.</li>
-                            <li>Tested circuit functionality using an oscilloscope and used a network analyzer to confirm the frequency response.</li>
-                        </ul>
-                    </div>
-                </div>
-                
-                <div class="detail-card" id="berkeley-lab">
-                    <div class="detail-header">
-                        <h2 class="detail-title">Berkeley Imaging Systems Laboratory</h2>
-                        <div class="detail-subtitle">Undergraduate Researcher</div>
-                        <div class="detail-date">April 2024 – Present | Berkeley, CA</div>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>Research Focus</h3>
-                        <p>Engineering a low-pass pre-amplifier with noise matching: the first-stage analog front-end for the Magnetic Particle Imaging system, a pre-clinical imaging modality with superior resolution, contrast, and safety to nuclear imaging.</p>
-                    </div>
-                    
-                    <div class="detail-section">
-                        <h3>Key Contributions</h3>
-                        <ul>
-                            <li>Managed a team of 10+ undergraduates to synthesize, extract, and purify 100+ iron oxide imaging tracer samples by filming instructional videos, writing a liquid-liquid extraction SOP, and delegating shifts for two semesters.</li>
-                            <li>Designed a self-assembling DNA-based drug delivery device using sCADnano (CAD-based nano-scale application) that allows for a 200% increase in successful drug encapsulation; verified in vitro through 100+ experiments.</li>
-                        </ul>
-                    </div>
-                </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">[Project] Multistage Pipelined RISC-V CPU - <em>Logisim</em></span>
+                    <span class="course-name">Designed a three-stage pipelined RISC-V CPU, building an ALU, register file and immediate generator
+                        to support 40+ I/R/B/S/J-type instructions and implementing hazard detection and control logic.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Research] Undergraduate Researcher @ <em>Berkeley Imaging Systems Laboratory</em></span>
+                    <span class="course-name">Engineer a low-pass pre-amplifier with noise matching: the first-stage analog front-end for the Magnetic Particle Imaging system, a pre-clinical imaging modality with superior resolution, contrast, and safety to nuclear imaging.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Project] IEEE Micromouse</span>
+                    <span class="course-name">Design and build an autonomous robotic “mouse” using microelectronics and CircuitPython programming that negotiates a maze of standard dimensions from a specified corner to the center in the shortest time. Sensors, PID control & efficient paths w/ floodfill (DFS) algorithm.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Teaching] CS61A Tutor</span>
+                    <span class="course-name">Taught <a href="https://eecs.berkeley.edu/cs-scholars/">CS Scholars</a> discussion, lab & small-group tutoring for UC Berkeley EECS's largest intro programming course.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Work] R&D Systems Engineer @ <em>Spiro Robotics</em></span>
+                    <span class="course-name">Firmware/robotic controls & software verification/validation for a handheld dual video endoscopy device.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Project] Procedural Coin Collection Game - <em>Java</em></span>
+                    <span class="course-name">Implemented a tile-based world exploration engine using cell decomposition for a seed-deterministic environment generation algorithm.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Project] FEM-based Oxygen Transport Model for Preventing Islet Cell Hypoxia via co-Implanted Oxygen-generating Biomaterials - <em>Comsol Multiphysics</em></span>
+                    <span class="course-name"><a href="https://drive.google.com/file/d/1A63PtcK7_1ABPk1W3gkN9Ofm7B78YfyO/view?usp=sharing" target="_blank">Manuscript</a></span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Research] DNA Nanomaterials Researcher @ <em>Tikhomirov Lab (<a href="https://citris-uc.org/labs-programs/citris-workforce-innovation/">CITRIS WIP Scholarship Recipient)</a></em></span>
+                    <span class="course-name">Designed a self-assembling DNA-based drug delivery device using sCADnano (CAD-based nano-scale application) that allows for a 200% increase in successful drug encapsulation; verified in vitro through 100+ experiments.</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">2024</h2>
             </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">[Research] Undergraduate Researcher & Lab Manager @ <em>Berkeley Imaging Systems Laboratory</em></span>
+                    <span class="course-name">Managed a team of 10+ undergraduates to synthesize, extract, and purify 100+ iron oxide imaging tracer samples by filming instructional videos, writing a liquid-liquid extraction SOP, and delegating shifts.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Project] Treble Boost Effects Box</span>
+                    <span class="course-name">Engineered a circuit that takes the output signal from an electric guitar, enhances its treble content, and raises its amplitude to provide a more pleasant, distorted tone than from an amplifier alone. 
+                    Transfer Function derivation, selecting circuit elements, SPICE simulation, live side-bys-de demo comparing ideal test bench signals w/ electric guitar. <a href="https://docs.google.com/presentation/d/1zwIUwUhgGQZc7weYazYfEwfGjqsqN2CRV7f7TV9L6kc/edit?usp=sharing" target="_blank">Presentation</a></span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Project] Scheme Interpreter - <em>Python</em></span>
+                    <span class="course-name">Implemented an interpreter for a subset of Lisp (Scheme) with static scoping and support for special forms.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Teaching] CS61A Teaching Intern</span>
+                    <span class="course-name">Help teach weekly lab sections.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Research] Clinical Research Intern @ <a href="https://thinkneuro.org/" target="_blank">Think Neuro USA</a></span>
+                    <span class="course-name">Synthesize clinical statistics from the top 100 most cited articles from the Web of Science regarding impact of lifestyle factors on the clinical representation Multiple Sclerosis.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Non-Profit] Shelter Support Intern @ <a href="https://www.self-sufficiency.org/" target="_blank">Building Opportunities for Self-Sufficiency</a></span>
+                    <span class="course-name">Research and presented two workshops about healthcare accessibility, nutrition on a budget, and government welfare for the unhoused community of Ursula Sherman Village, the first CA shelter activated for homeless disabled adults.</span>
+                </li>
+            </ul>
+        </div>
+        
+        <div class="semester">
+            <div class="semester-header">
+                <h2 class="semester-title">2023 - prior</h2>
+            </div>
+            <ul class="course-list">
+                <li class="course">
+                    <span class="course-code">[Research] Research Assistent @ <a href="https://sites.google.com/uw.edu/yingzhenglab/home" target="_blank">UW Medicine, Zheng Lab</a></span>
+                    <span class="course-name">Organ on chips, enothelial cells & tissue regeneration! Assisted with cell culture, differentiation, staining and imaging.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Non-Profit] Founder & co-President @ <a href="https://theasianamericanstory.weebly.com/" target="_blank"><em>Education Coalition for Asian American Representation</em></a></span>
+                    <span class="course-name">Non-Profit for Asian American Education through community events, curricula writing and social media. 100k+ audience reached; 50+ members; 15+ community events; writing curricula; state (CACA, WASA) & national (AAJA) recognition. See more in <a href="extra.html" target="_blank">Extra</a>.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Teaching] Teaching Assistant @ <a href="https://www.rmc-academy.org/" target="_blank">RMC Academy, LLC</a></span>
+                    <span class="course-name">Coordinate lesson worksheets and host office hours for 150+ middle school students in introductory college physics & biology.</span>
+                </li>
+                <li class="course">
+                    <span class="course-code">[Teaching] Head Volleyball Coach @ Mercer Island Boys & Girls Club</span>
+                    <span class="course-name">Coached 50+ middle/high school aged youth volleyball players. <a href="https://drive.google.com/drive/folders/1NPJShucKppu5VUXuE68sgbfH9t0nDZy5?usp=sharing" target="_blank">Practice plan archive</a>.</span>
+                </li>
+            </ul>
         </div>
     </main>
-    
-    <script>
-        const experienceItems = document.querySelectorAll('.experience-item');
-        const detailCards = document.querySelectorAll('.detail-card');
-        const placeholder = document.querySelector('.placeholder-message');
-        
-        experienceItems.forEach(item => {
-            item.addEventListener('click', () => {
-                const targetId = item.getAttribute('data-target');
-                const targetCard = document.getElementById(targetId);
-                const isCurrentlyActive = item.classList.contains('active');
-                
-                // Remove active class from all items
-                experienceItems.forEach(i => i.classList.remove('active'));
-                
-                // Hide all detail cards
-                detailCards.forEach(card => card.classList.remove('active'));
-                
-                // If clicking the same item, close it and show placeholder
-                if (isCurrentlyActive) {
-                    placeholder.style.display = 'block';
-                } else {
-                    // Otherwise, show the new item
-                    item.classList.add('active');
-                    placeholder.style.display = 'none';
-                    if (targetCard) {
-                        targetCard.classList.add('active');
-                    }
-                }
-            });
-        });
-    </script>
 </body>
 </html>
