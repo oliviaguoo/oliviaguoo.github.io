@@ -152,6 +152,23 @@
         .detail-card.active {
             display: block;
         }
+
+        a {
+            color: #1a1a1a;
+            text-decoration: underline;
+        }
+        
+        a:hover, a:visited:hover {
+            color: #666666;
+        }
+        
+        a:visited {
+            color: #1a1a1a;
+        }
+        
+        a:active {
+            color: #666666;
+        }
         
         @keyframes fadeIn {
             from {
@@ -270,7 +287,7 @@
                     <ul class="experience-list">
                         <li class="experience-item" data-target="spiro">
                             <div class="experience-type">Work Experience</div>
-                            <div class="experience-name">Spiro Robotics</div>
+                            <div class="experience-name">R&D Systems Engineer @ Spiro Robotics</div>
                         </li>
                         <li class="experience-item" data-target="micromouse">
                             <div class="experience-type">Project</div>
@@ -305,20 +322,17 @@
                     <div class="detail-header">
                         <h2 class="detail-title">Spiro Robotics</h2>
                         <div class="detail-subtitle">R&D Systems Engineering Intern</div>
-                        <div class="detail-date">May 2025 – August 2025 | Castro Valley, CA</div>
+                        <div class="detail-date">May 2025 – August 2025 (11 weeks) | Castro Valley, CA</div>
                     </div>
-                    
                     <div class="detail-section">
-                        <h3>Overview</h3>
-                        <p>Worked on firmware development and hardware optimization for assistive robotics devices, focusing on joystick controls and servo motor systems.</p>
+                        <p><a href="https://spirorobotics.com/"><u>Spiro Robotics</u></a> is creating a dual video endoscopy platform for image-guided navigation & advanced intubation control.</p>
                     </div>
-                    
                     <div class="detail-section">
-                        <h3>Key Contributions</h3>
                         <ul>
-                            <li>Developed Arduino-based firmware for joystick controls, implementing CRC protocol between device and its external display, and optimized joystick input to motor sensitivity, eliminating jerky movements in articulation.</li>
-                            <li>Spearheaded a new feature initiative by engineering a servo motor position tracking system with low-pass filtering to reduce signal noise, modifying hardware, and writing Arduino C++ scripts for data analysis and optimization.</li>
-                            <li>Repaired Python manufacturing scripts for new device firmware, added save/load features, and created executables to simplify quality control tests; used to validate 50+ device functionalities per ISO 7376 and FDA 510(k) standards.</li>
+                            <li>Developed Arduino-based firmware for joystick controls, implementing communication protocol between device and its external display, and optimized joystick input to motor sensitivity.</li>
+                            <li>Spearheaded a new feature initiative by engineering a servo motor position tracking system, writing Arduino C++ scripts for data analysis and optimizing signal noise reduction.</li>
+                            <li>Repaired Python manufacturing scripts for new device firmware, added save/load features, and created executables used to validate 50+ device functionalities per ISO 7376 and FDA 510(k) standards.</li>
+                            <li>Led kiosk-mode Ubuntu OS deployment for medical display and wrote Linux setup procedure for cybersecurity compliance.</li>
                         </ul>
                     </div>
                 </div>
