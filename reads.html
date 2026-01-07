@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reads - Olivia Guo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 2rem 0 1rem 0;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .site-title {
+            font-family: 'Canadienne Brusher', cursive;
+            font-size: 3rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+        
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid #1a1a1a;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #666666;
+            border-bottom-color: #666666;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            color: #000000;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            color: #333333;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .books-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1.5rem;
+        }
+        
+        .book-item {
+            margin-bottom: 2.5rem;
+            padding-bottom: 2rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .book-item:last-child {
+            border-bottom: none;
+        }
+        
+        .book-title {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 1.2rem;
+            margin-bottom: 0.25rem;
+        }
+        
+        .book-author {
+            color: #666666;
+            font-size: 0.95rem;
+            margin-bottom: 0.5rem;
+        }
+        
+        .book-rating {
+            color: #999999;
+            font-size: 0.9rem;
+            margin-bottom: 0.75rem;
+        }
+        
+        .book-review {
+            color: #333333;
+            line-height: 1.7;
+        }
+        
+        a {
+            color: #1a1a1a !important;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #1a1a1a !important;
+        }
+        
+        a:hover,
+        a:visited:hover {
+            color: #666666 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="extra.html">Extra</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Recent Reads</h1>
+        
+        <ul class="books-list">
+            <li class="book-item">
+                <div class="book-title">Currently re-Reading: To Kill a Mockingbird</div>
+                <div class="book-author">Harper Lee</div>
+                <p class="book-review">
+                </p>
+            </li>
+        </ul>
+        
+        <h2>2026</h2>
+        <ul class="books-list">
+            <li class="book-item">
+                <div class="book-title">The Joy Luck Club</div>
+                <div class="book-author">Amy Tan</div>
+                <div class="book-rating">★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+        
+        <h2>2025</h2>
+        <ul class="books-list">
+            <li class="book-item">
+                <div class="book-title">The Sympathizer</div>
+                <div class="book-author">Viet Thanh Nguyen</div>
+                <div class="book-rating">★★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">Taiwan Travelogue</div>
+                <div class="book-author">Yang Shuang-Zi</div>
+                <div class="book-rating">★★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">Soul of a Citizen: Living With Conviction in a Cynical Time</div>
+                <div class="book-author">Paul Rogat Loeb</div>
+                <div class="book-rating">★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">this is where it ends</div>
+                <div class="book-author">Marieke Nijkamp</div>
+                <div class="book-rating">★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">Sunrise on the Reaping</div>
+                <div class="book-author">Suzanne Collins</div>
+                <div class="book-rating">★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+        </ul>
+
+        <h2>2024 Favorites</h2>
+        <ul class="books-list">
+            <li class="book-item">
+                <div class="book-title">Beloved</div>
+                <div class="book-author">Toni Morrison</div>
+                <div class="book-rating">★★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">A Christmas Carol</div>
+                <div class="book-author">Charles Dickens</div>
+                <div class="book-rating">★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">The Seven Husbands of Evelyn Hugo</div>
+                <div class="book-author">Taylor Jenkins Reid</div>
+                <div class="book-rating">★★★★</div>
+                <p class="book-review">
+                </p>
+            </li>
+        </ul>
+        
+        <h2>Other Favorites</h2>
+        <ul class="books-list">
+            <li class="book-item">
+                <div class="book-title">Purple Hibiscus</div>
+                <div class="book-author">Chimamanda Ngozi Adichie</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">Six of Crows</div>
+                <div class="book-author">Leigh Bardugo</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">The Nickel Boys</div>
+                <div class="book-author">Colson Whitehead</div>
+                <p class="book-review">
+                </p>
+            </li>
+            <li class="book-item">
+                <div class="book-title">The Road</div>
+                <div class="book-author">Cormac McCarthy</div>
+                <p class="book-review">
+                </p>
+            </li>
+        </ul>
+    </main>
+</body>
+</html>
