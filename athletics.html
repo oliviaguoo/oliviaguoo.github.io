@@ -1,0 +1,308 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Athletics - Olivia Guo</title>
+    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            background-color: #ffffff;
+            color: #1a1a1a;
+        }
+        
+        header {
+            background-color: #ffffff;
+            padding: 2rem 0 1rem 0;
+            position: sticky;
+            top: 0;
+            border-bottom: 1px solid #e0e0e0;
+        }
+        
+        .header-content {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 2rem;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 1.5rem;
+        }
+        
+        .site-title {
+            font-family: 'Canadienne Brusher', cursive;
+            font-size: 3rem;
+            color: #1a1a1a;
+            text-align: center;
+        }
+        
+        nav ul {
+            display: flex;
+            list-style: none;
+            gap: 3rem;
+        }
+        
+        nav a {
+            color: #1a1a1a;
+            text-decoration: none;
+            font-size: 1rem;
+            padding-bottom: 0.25rem;
+            border-bottom: 2px solid #1a1a1a;
+            transition: color 0.3s, border-color 0.3s;
+        }
+        
+        nav a:hover {
+            color: #666666;
+            border-bottom-color: #666666;
+        }
+        
+        main {
+            max-width: 800px;
+            margin: 3rem auto;
+            padding: 0 2rem;
+        }
+        
+        h1 {
+            color: #000000;
+            margin-bottom: 1.5rem;
+            font-weight: 600;
+            font-size: 2rem;
+        }
+        
+        h2 {
+            color: #1a1a1a;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            font-weight: 600;
+            font-size: 1.4rem;
+        }
+        
+        p {
+            color: #333333;
+            margin-bottom: 1rem;
+            line-height: 1.8;
+        }
+        
+        .sport-section {
+            margin-bottom: 3rem;
+        }
+        
+        .activity-list {
+            list-style: none;
+            padding-left: 0;
+            margin-top: 1.5rem;
+        }
+        
+        .activity-item {
+            margin-bottom: 2rem;
+            padding-bottom: 1.5rem;
+            border-bottom: 1px solid #f0f0f0;
+        }
+        
+        .activity-item:last-child {
+            border-bottom: none;
+        }
+        
+        .activity-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 0.5rem;
+        }
+        
+        .activity-name {
+            font-weight: 600;
+            color: #1a1a1a;
+            font-size: 1.1rem;
+        }
+        
+        .activity-date {
+            color: #666666;
+            font-size: 0.9rem;
+        }
+        
+        .activity-description {
+            color: #333333;
+            line-height: 1.7;
+        }
+        
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 1rem;
+            margin-top: 1rem;
+            padding: 1rem;
+            background-color: #f9f9f9;
+            border-radius: 4px;
+        }
+        
+        .stat-item {
+            text-align: center;
+        }
+        
+        .stat-value {
+            font-weight: 600;
+            font-size: 1.3rem;
+            color: #1a1a1a;
+        }
+        
+        .stat-label {
+            font-size: 0.85rem;
+            color: #666666;
+            margin-top: 0.25rem;
+        }
+        
+        a {
+            color: #1a1a1a !important;
+            text-decoration: underline;
+        }
+        
+        a:visited {
+            color: #1a1a1a !important;
+        }
+        
+        a:hover,
+        a:visited:hover {
+            color: #666666 !important;
+        }
+        
+        @media (max-width: 768px) {
+            .site-title {
+                font-size: 2.5rem;
+            }
+            
+            nav ul {
+                flex-wrap: wrap;
+                justify-content: center;
+                gap: 1.5rem;
+            }
+            
+            .activity-header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="header-content">
+            <nav>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="experience.html">Experience</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="extras.html">Extras</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <h1>Athletics</h1>
+        
+        <p>Playing sports and staying active is such a huge part of my life. 8 years & counting of competitive volleyball, 9 years & counting of hiking/backpacking, 2 years & counting of distance running, here's a little summary of it all :D</p>
+        
+        <div class="sport-section">
+            <h2>Volleyball</h2>
+            <p>Quick rundown: played all four years of high school where I was a pin hitter & the captain of the varsity team. Won team awards 4/4 years (2x most improved, 2x MVP), named First Team All-League, and school-wide student-athlete of the year (highest combined academic/athletic performance). 
+            I also played club volleyball for four years, started at Moxie Juniors Volleyball Club, then Northwest Juniors Volleyball Club, and ended at Sudden Impact Volleyball Club. Currently, I'm an outside hitter for Cal Women's Club Volleyball Team and the Chinese Bears NACIVT 9-man team. 
+            Since moving to the bay area, I've been introduced to many more play styles, namely beach, grass, and reverse coed volleyball, it's surprising how small changes in rules & the playing surface vastly alters a game with the same mechanics!!</p>
+            
+            <ul class="activity-list">
+                <li class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-name">Recent Tournaments</span>
+                    </div>
+                    <p class="activity-description">
+                      <ul>
+                        <li>[Cal Club Volleyball; Indoor 6s] 2025 Cal Classic (1/12)</li>
+                        <li>[Miscellaneous; Grass Doubles Revco] Fog City 10 (dnp)</li>
+                        <li>[Cal Club Volleyball; Indoor 6s] SCCVL Fall Classic '25 (5/24)</li>
+                        <li>[San Francisco Chinese Bears; Indoor 6s] The 80th North American Chinese Invitational Volleyball Tournament (dnp)</li>
+                        <li>[San Francisco Chinese Bears; Indoor 6s] 2025 SF Dynasty Women's Summer Tournament (dnp)</li>
+                        <li>[Cal Club Volleyball; Indoor 6s] 2025 NCVF Volleyball Championships (3/503)</li>
+                        <li>[Cal Club Volleyball; Indoor 6s] 2025 Las Vegas Classic (3/26) </li>
+                        <li>[Cal Club Volleyball; Indoor 6s] League Play (9-1, 1/6)</li>
+                        <li>[Cal Club Volleyball; Indoor 6s] 2024 Cal Classic (1/12)</li>
+                        <li>[San Francisco Chinese Bears; Indoor 6s] North American Chinese Invitational Volleyball Tourament Back to the Bay 79th Annual (9/83)</li>
+                      </ul>
+                    </p>
+                </li>
+              <p><a href="https://www.youtube.com/@guoolivia8" target="_blank">Game Film Archive</a></p>
+            </ul>
+        </div>
+        
+        <div class="sport-section">
+            <h2>Hiking/Backpacking</h2>
+            <p>I think this hobby is a natural byproduct of growing up in the Pacific Northwest, but I also think I'm considered outdoorsy, even by PNW standards. I was involved with the Boy Scouts of America (I'm an Eagle Scout!) which
+            allowed me to learn outdoor recreation from mentors that have been doing high adventure outdoor trips for decades.</p>
+            
+            <ul class="activity-list">
+                <li class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-name">Recent Hikes</span>
+                    </div>
+                    <p class="activity-description">
+                      <ul>
+                        <li>Mount Si Trail (8.10 mi); Mount Si Natural Resources Conservation Area</li>
+                        <li>Wildcat Peak (3.40 mi); Tilden Regional Park</li>
+                        <li>Torrey Pines Beach Trail Loop (2.30 mi); Torrey Pines State Natural Reserve</li>
+                        <li>Tunnel Mountain Summit (2.80 mi); Banff National Park</li>
+                        <li>Canopy, Dipsea and Sun Trail Loop (4.90 mi); Mount Tamalpais State Park</li>
+                        <li>Tomales Point Trail (9.60 mi); Point Reyes National Seashore</li>
+                      </ul>
+                    </p>
+                </li>
+                
+                <li class="activity-item">
+                    <div class="activity-header">
+                        <span class="activity-name">Favorites :3</span>
+                    </div>
+                    <p class="activity-description">
+                        <ul>
+                          <li>Cape Alava Loop/Ozette Triangle (9.4 mi); Olympic National Park</li>
+                          <li>Goldmyer Hot Springs (24.0 mi)</li>
+                          <li>Mailbox Peak (9.4 mi); Mount Baker-Snoqualmie National Forest</li>
+                          <li>Poo Poo Point Trail (6.8 mi); West Tiger Mountain Natural Resource Conservation Area</li>
+                          <li>Bandera Mountain Summit (8.0 mi); Mount Baker Snoqualmie National Forest</li>
+                          <li>West Tiger #3 (5.6 mi); West Tiger Mountain Natural Resource Conservation Area</li>
+                        </ul>
+                    </p>
+                </li>
+
+              <p>Recently have been trying to kee <a href="https://www.alltrails.com/en/members/olivia-guo-6?utm_campaign=mobile-iphone&sh=436i4l" target="_blank">AllTrails</a> updated.</p>
+            </ul>
+        </div>
+        
+        <div class="sport-section">
+            <h2>Running</h2>
+            <p>Last but not least...the bay area tech employee pipeling...I've been super into running. Didn't run in high school (does 1 season of ultimate frisbee count?) but trying to get faster every day! </p>
+
+            <ul class="activity-list">
+                  <li class="activity-item">
+                      <div class="activity-header">
+                          <span class="activity-name">Races</span>
+                      </div>
+                      <p class="activity-description">
+                        <ul>
+                          <li>11/16/25 Berkeley Half Marathon 1:49:39</li>
+                          <li>07/26/25 San Francisco Half Marathon, 2nd Half 1:59:38</li>
+                        </ul>
+                      </p>
+                  </li>
+                <p><a href="https://www.strava.com/athletes/oliviaguo8" target="_blank">Strava</a></p>
+              </ul>
+        </div>
+    </main>
+</body>
+</html>
