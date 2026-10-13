@@ -168,3 +168,21 @@ main ul.activity-list, main ul.service-list { list-style: none; padding-left: 0;
   nav a { padding: 0.35rem 0.8rem; }
 }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; scroll-behavior: auto !important; } }
+
+/* ---------- Profile photo (home page) ---------- */
+.intro-top { display: flex; align-items: center; gap: 1.75rem; margin-bottom: 1.5rem; }
+.intro-top h1 { margin-bottom: 0; }
+.profile-photo {
+  width: 140px;
+  height: 140px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  object-fit: cover;          /* crops to a circle without squishing */
+  object-position: center;    /* try "center top" if your face gets cut off */
+  border: 4px solid var(--bg);
+  box-shadow: 0 0 0 2px var(--sage-deep);
+}
+@media (max-width: 640px) {
+  .profile-photo { width: 96px; height: 96px; }
+  .intro-top { gap: 1.1rem; }
+}
