@@ -186,3 +186,20 @@ main ul.activity-list, main ul.service-list { list-style: none; padding-left: 0;
   .profile-photo { width: 96px; height: 96px; }
   .intro-top { gap: 1.1rem; }
 }
+
+/* ---------- Concise experience list ---------- */
+.xp-list { list-style: none; padding-left: 0 !important; margin: 0 0 0.5rem; }
+.xp-list li {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: 0.2rem 1rem;
+  padding: 0.6rem 0;
+  margin: 0;
+  border-bottom: 1px solid var(--sand-dark);
+}
+.xp-list li:last-child { border-bottom: 0; }
+.xp-main { color: var(--ink); }
+.xp-main em { color: var(--ink-soft); }
+.xp-extra { color: var(--ink-faint); font-size: 0.88rem; margin-left: 0.35rem; }
