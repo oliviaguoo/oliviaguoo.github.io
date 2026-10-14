@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Reads - Olivia Guo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
     <header>
@@ -13,92 +12,61 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="guo-olivia-resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="extra.html">Extra</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dd-toggle" aria-haspopup="true"
+                           onclick="if(!matchMedia('(hover:hover)').matches){this.parentNode.classList.toggle('open')}return false">Hobbies</a>
+                        <ul class="dd-menu">
+                            <li><a href="athletics.html">Athletics</a></li>
+                            <li><a href="reads.html">Reads</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main>
         <h1>Recent Reads</h1>
-        
+
         <ul class="books-list">
-            <li class="book-item">
-                <span class="book-title">Currently Reading: Kairos</span> by <span class="book-author">Jenny Erpenbeck</span>
-            </li>
+            <li class="book-item"><span class="book-title">Currently Reading: Kairos</span> by <span class="book-author">Jenny Erpenbeck</span></li>
         </ul>
-        
+
         <h2>2026</h2>
         <ul class="books-list">
-            <li class="book-item">
-                <span class="book-title">The House in the Cerulean Sea</span> by <span class="book-author">TJ Klune</span> <span class="book-rating">★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">The Picture of Dorian Gray</span> by <span class="book-author">Oscar Wilde</span> <span class="book-rating">★★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">Demon Copperhead</span> by <span class="book-author">Barbara Kingsolver</span> <span class="book-rating">★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">I Who Have Never Known Men</span> by <span class="book-author">Jacqueline Harpman</span> <span class="book-rating">★★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">To Kill a Mockingbird (re-Read)</span> by <span class="book-author">Harper Lee</span> <span class="book-rating">★★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">The Joy Luck Club</span> by <span class="book-author">Amy Tan</span> <span class="book-rating">★★★★</span>
-            </li>
+            <li class="book-item"><span class="book-title">The House in the Cerulean Sea</span> by <span class="book-author">TJ Klune</span> <span class="book-rating">★★★★</span></li>
+            <li class="book-item"><span class="book-title">The Picture of Dorian Gray</span> by <span class="book-author">Oscar Wilde</span> <span class="book-rating">★★★★★</span></li>
+            <li class="book-item"><span class="book-title">Demon Copperhead</span> by <span class="book-author">Barbara Kingsolver</span> <span class="book-rating">★★★★</span></li>
+            <li class="book-item"><span class="book-title">I Who Have Never Known Men</span> by <span class="book-author">Jacqueline Harpman</span> <span class="book-rating">★★★★★</span></li>
+            <li class="book-item"><span class="book-title">To Kill a Mockingbird (re-Read)</span> by <span class="book-author">Harper Lee</span> <span class="book-rating">★★★★★</span></li>
+            <li class="book-item"><span class="book-title">The Joy Luck Club</span> by <span class="book-author">Amy Tan</span> <span class="book-rating">★★★★</span></li>
         </ul>
-        
+
         <h2>2025</h2>
         <ul class="books-list">
-            <li class="book-item">
-                <span class="book-title">The Sympathizer</span> by <span class="book-author">Viet Thanh Nguyen</span> <span class="book-rating">★★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">Taiwan Travelogue</span> by <span class="book-author">Yang Shuang-Zi</span> <span class="book-rating">★★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">Soul of a Citizen: Living With Conviction in a Cynical Time</span> by <span class="book-author">Paul Rogat Loeb</span> <span class="book-rating">★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">this is where it ends</span> by <span class="book-author">Marieke Nijkamp</span> <span class="book-rating">★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">Sunrise on the Reaping</span> by <span class="book-author">Suzanne Collins</span> <span class="book-rating">★★★★</span>
-            </li>
+            <li class="book-item"><span class="book-title">The Sympathizer</span> by <span class="book-author">Viet Thanh Nguyen</span> <span class="book-rating">★★★★★</span></li>
+            <li class="book-item"><span class="book-title">Taiwan Travelogue</span> by <span class="book-author">Yang Shuang-Zi</span> <span class="book-rating">★★★★★</span></li>
+            <li class="book-item"><span class="book-title">Soul of a Citizen: Living With Conviction in a Cynical Time</span> by <span class="book-author">Paul Rogat Loeb</span> <span class="book-rating">★★★</span></li>
+            <li class="book-item"><span class="book-title">this is where it ends</span> by <span class="book-author">Marieke Nijkamp</span> <span class="book-rating">★★</span></li>
+            <li class="book-item"><span class="book-title">Sunrise on the Reaping</span> by <span class="book-author">Suzanne Collins</span> <span class="book-rating">★★★★</span></li>
         </ul>
 
         <h2>2024 Favorites</h2>
         <ul class="books-list">
-            <li class="book-item">
-                <span class="book-title">Beloved</span> by <span class="book-author">Toni Morrison</span> <span class="book-rating">★★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">A Christmas Carol</span> by <span class="book-author">Charles Dickens</span> <span class="book-rating">★★★★</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">The Seven Husbands of Evelyn Hugo</span> by <span class="book-author">Taylor Jenkins Reid</span> <span class="book-rating">★★★★</span>
-            </li>
+            <li class="book-item"><span class="book-title">Beloved</span> by <span class="book-author">Toni Morrison</span> <span class="book-rating">★★★★★</span></li>
+            <li class="book-item"><span class="book-title">A Christmas Carol</span> by <span class="book-author">Charles Dickens</span> <span class="book-rating">★★★★</span></li>
+            <li class="book-item"><span class="book-title">The Seven Husbands of Evelyn Hugo</span> by <span class="book-author">Taylor Jenkins Reid</span> <span class="book-rating">★★★★</span></li>
         </ul>
-        
+
         <h2>Other Favorites</h2>
         <ul class="books-list">
-            <li class="book-item">
-                <span class="book-title">Purple Hibiscus</span> by <span class="book-author">Chimamanda Ngozi Adichie</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">Six of Crows</span> by <span class="book-author">Leigh Bardugo</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">The Nickel Boys</span> by <span class="book-author">Colson Whitehead</span>
-            </li>
-            <li class="book-item">
-                <span class="book-title">The Road</span> by <span class="book-author">Cormac McCarthy</span>
-            </li>
+            <li class="book-item"><span class="book-title">Purple Hibiscus</span> by <span class="book-author">Chimamanda Ngozi Adichie</span></li>
+            <li class="book-item"><span class="book-title">Six of Crows</span> by <span class="book-author">Leigh Bardugo</span></li>
+            <li class="book-item"><span class="book-title">The Nickel Boys</span> by <span class="book-author">Colson Whitehead</span></li>
+            <li class="book-item"><span class="book-title">The Road</span> by <span class="book-author">Cormac McCarthy</span></li>
         </ul>
     </main>
 </body>

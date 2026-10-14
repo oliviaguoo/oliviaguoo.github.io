@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Athletics - Olivia Guo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
     <header>
@@ -13,117 +12,107 @@
             <nav>
                 <ul>
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="guo-olivia-resume.pdf">Resume</a></li>
+                    <li><a href="guo-olivia-resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="extra.html">Extra</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dd-toggle" aria-haspopup="true"
+                           onclick="if(!matchMedia('(hover:hover)').matches){this.parentNode.classList.toggle('open')}return false">Hobbies</a>
+                        <ul class="dd-menu">
+                            <li><a href="athletics.html">Athletics</a></li>
+                            <li><a href="reads.html">Reads</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main>
         <h1>Athletics</h1>
-        
+
         <p>Playing sports and staying active is such a huge part of my life. 8+ years of competitive volleyball, 9+ years of hiking/backpacking, 2+ years of distance running, here's a little summary of it all :D</p>
-        
+
         <div class="sport-section">
             <h2>Volleyball</h2>
-            <p>Quick rundown: played all four years of high school where I was a pin hitter & the captain of the varsity team. Won team awards 4/4 years (2x most improved, 2x MVP), named First Team All-League, and school-wide student-athlete of the year (highest combined academic/athletic performance). 
-            I also played club volleyball for four years, started at Moxie Juniors Volleyball Club, then Northwest Juniors Volleyball Club, and ended at Sudden Impact Volleyball Club. Currently, I'm an outside hitter for Cal Women's Club Volleyball Team (2nd team all NCCVL). 
-            Since moving to the bay area, I've been introduced to many more play styles, namely beach, grass, and reverse coed volleyball, it's surprising how small changes in rules & the playing surface vastly alters a game with the same mechanics!!</p>
-            
-            <ul class="activity-list">
-                <li class="activity-item">
-                    <div class="activity-header">
-                        <span class="activity-name">Recent Tournaments</span>
-                    </div>
-                    <p class="activity-description">
-                      <ul>
-                        <li>[Cal Club Volleyball; Indoor 6s] 2026 NCVF Volleyball Championships (dnp)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] 2026 West Region Challenge (2/18)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] League Play (9-4, 2/6)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] 2025 Cal Classic (1/12)</li>
-                        <li>[Miscellaneous; Grass Doubles Revco] Fog City 10 (dnp)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] SCCVL Fall Classic '25 (5/24)</li>
-                        <li>[San Francisco Chinese Bears; Indoor 6s] The 80th North American Chinese Invitational Volleyball Tournament (dnp)</li>
-                        <li>[San Francisco Chinese Bears; Indoor 6s] 2025 SF Dynasty Women's Summer Tournament (dnp)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] 2025 NCVF Volleyball Championships (3/503)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] 2025 Las Vegas Classic (3/26) </li>
-                        <li>[Cal Club Volleyball; Indoor 6s] League Play (9-1, 1/6)</li>
-                        <li>[Cal Club Volleyball; Indoor 6s] 2024 Cal Classic (1/12)</li>
-                        <li>[San Francisco Chinese Bears; Indoor 6s] North American Chinese Invitational Volleyball Tourament Back to the Bay 79th Annual (9/83)</li>
-                      </ul>
-                    </p>
-                </li>
-                <p><a href="https://youtube.com/playlist?list=PLQTj-KPiZGKqGMZDciRq88dhta2oU89PP&si=Tno6ISNQe7ybGfIM" target="_blank">2026 Film Archive</a></p>
-                <p><a href="https://www.youtube.com/@guoolivia8" target="_blank">2025 Film Archive</a></p>
-            </ul>
+            <p>Quick rundown: played all four years of high school where I was a pin hitter &amp; the captain of the varsity team. Won team awards 4/4 years (2x most improved, 2x MVP), named First Team All-League, and school-wide student-athlete of the year (highest combined academic/athletic performance).
+            I also played club volleyball for four years, started at Moxie Juniors Volleyball Club, then Northwest Juniors Volleyball Club, and ended at Sudden Impact Volleyball Club. Currently, I'm an outside hitter for Cal Women's Club Volleyball Team (2nd team all NCCVL).
+            Since moving to the bay area, I've been introduced to many more play styles, namely beach, grass, and reverse coed volleyball, it's surprising how small changes in rules &amp; the playing surface vastly alters a game with the same mechanics!!</p>
+
+            <div class="activity-list">
+            <div class="activity-item">
+                <span class="activity-name">Recent Tournaments</span>
+                <ul>
+                    <li>[Cal Club Volleyball; Indoor 6s] 2026 NCVF Volleyball Championships (dnp)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] 2026 West Region Challenge (2/18)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] League Play (9-4, 2/6)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] 2025 Cal Classic (1/12)</li>
+                    <li>[Miscellaneous; Grass Doubles Revco] Fog City 10 (dnp)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] SCCVL Fall Classic '25 (5/24)</li>
+                    <li>[San Francisco Chinese Bears; Indoor 6s] The 80th North American Chinese Invitational Volleyball Tournament (dnp)</li>
+                    <li>[San Francisco Chinese Bears; Indoor 6s] 2025 SF Dynasty Women's Summer Tournament (dnp)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] 2025 NCVF Volleyball Championships (3/503)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] 2025 Las Vegas Classic (3/26)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] League Play (9-1, 1/6)</li>
+                    <li>[Cal Club Volleyball; Indoor 6s] 2024 Cal Classic (1/12)</li>
+                    <li>[San Francisco Chinese Bears; Indoor 6s] North American Chinese Invitational Volleyball Tournament Back to the Bay 79th Annual (9/83)</li>
+                </ul>
+            </div>
+            </div>
+            <p><a href="https://youtube.com/playlist?list=PLQTj-KPiZGKqGMZDciRq88dhta2oU89PP&amp;si=Tno6ISNQe7ybGfIM" target="_blank">2026 Film Archive</a></p>
+            <p><a href="https://www.youtube.com/@guoolivia8" target="_blank">2025 Film Archive</a></p>
         </div>
-        
+
         <div class="sport-section">
             <h2>Hiking/Backpacking</h2>
             <p>I think this hobby is a natural byproduct of growing up in the Pacific Northwest, but I also think I'm considered outdoorsy, even by PNW standards. I was involved with the Boy Scouts of America (I'm an Eagle Scout!) which
             allowed me to learn outdoor recreation from mentors that have been doing high adventure outdoor trips for decades.</p>
-            
-            <ul class="activity-list">
-                <li class="activity-item">
-                    <div class="activity-header">
-                        <span class="activity-name">Recent Hikes</span>
-                    </div>
-                    <p class="activity-description">
-                      <ul>
-                        <li>Mount Hua (3.5 mi, ~3,000ft Elevation); Huashan Scenic Area</li>
-                        <li>Mailbox Peak - Old Trail Up, New Trail Down (7.2 mi); Mount Baker-Snoqualmie National Forest</li>
-                        <li>Coal Creek Falls (7 mi); Cougar Mountain Regional Wildland</li>
-                        <li>Mount Si Trail - Old Trail Up, New Trail Down (8.10 mi); Mount Si Natural Resources Conservation Area</li>
-                        <li>Wildcat Peak (3.40 mi); Tilden Regional Park</li>
-                        <li>Torrey Pines Beach Trail Loop (2.30 mi); Torrey Pines State Natural Reserve</li>
-                        <li>Tunnel Mountain Summit (2.80 mi); Banff National Park</li>
-                      </ul>
-                    </p>
-                </li>
-                
-                <li class="activity-item">
-                    <div class="activity-header">
-                        <span class="activity-name">Favorites :3</span>
-                    </div>
-                    <p class="activity-description">
-                        <ul>
-                          <li>Cape Alava Loop/Ozette Triangle (9.4 mi); Olympic National Park</li>
-                          <li>Goldmyer Hot Springs (24.0 mi)</li>
-                          <li>Poo Poo Point Trail (6.8 mi); West Tiger Mountain Natural Resource Conservation Area</li>
-                          <li>Bandera Mountain Summit (8.0 mi); Mount Baker Snoqualmie National Forest</li>
-                          <li>West Tiger #3 (5.6 mi); West Tiger Mountain Natural Resource Conservation Area</li>
-                          <li>Canopy, Dipsea and Sun Trail Loop (4.90 mi); Mount Tamalpais State Park</li>
-                          <li>Tomales Point Trail (9.60 mi); Point Reyes National Seashore</li>
-                        </ul>
-                    </p>
-                </li>
 
-              <p>Recently have been trying to keep <a href="https://www.alltrails.com/en/members/olivia-guo-6?utm_campaign=mobile-iphone&sh=436i4l" target="_blank">AllTrails</a> updated.</p>
-            </ul>
+            <div class="activity-list">
+            <div class="activity-item">
+                <span class="activity-name">Recent Hikes</span>
+                <ul>
+                    <li>Mount Hua (3.5 mi, ~3,000ft Elevation); Huashan Scenic Area</li>
+                    <li>Mailbox Peak - Old Trail Up, New Trail Down (7.2 mi); Mount Baker-Snoqualmie National Forest</li>
+                    <li>Coal Creek Falls (7 mi); Cougar Mountain Regional Wildland</li>
+                    <li>Mount Si Trail - Old Trail Up, New Trail Down (8.10 mi); Mount Si Natural Resources Conservation Area</li>
+                    <li>Wildcat Peak (3.40 mi); Tilden Regional Park</li>
+                    <li>Torrey Pines Beach Trail Loop (2.30 mi); Torrey Pines State Natural Reserve</li>
+                    <li>Tunnel Mountain Summit (2.80 mi); Banff National Park</li>
+                </ul>
+            </div>
+
+            <div class="activity-item">
+                <span class="activity-name">Favorites :3</span>
+                <ul>
+                    <li>Cape Alava Loop/Ozette Triangle (9.4 mi); Olympic National Park</li>
+                    <li>Goldmyer Hot Springs (24.0 mi)</li>
+                    <li>Poo Poo Point Trail (6.8 mi); West Tiger Mountain Natural Resource Conservation Area</li>
+                    <li>Bandera Mountain Summit (8.0 mi); Mount Baker Snoqualmie National Forest</li>
+                    <li>West Tiger #3 (5.6 mi); West Tiger Mountain Natural Resource Conservation Area</li>
+                    <li>Canopy, Dipsea and Sun Trail Loop (4.90 mi); Mount Tamalpais State Park</li>
+                    <li>Tomales Point Trail (9.60 mi); Point Reyes National Seashore</li>
+                </ul>
+            </div>
+            </div>
+            <p>Recently have been trying to keep <a href="https://www.alltrails.com/en/members/olivia-guo-6?utm_campaign=mobile-iphone&amp;sh=436i4l" target="_blank">AllTrails</a> updated.</p>
         </div>
-        
+
         <div class="sport-section">
             <h2>Running</h2>
-            <p>Last but not least...the bay area tech employee pipeline...I've been super into running. Didn't run in high school (does 1 season of ultimate frisbee count?) but trying to get faster every day! </p>
+            <p>Last but not least...the bay area tech employee pipeline...I've been super into running. Didn't run in high school (does 1 season of ultimate frisbee count?) but trying to get faster every day!</p>
 
-            <ul class="activity-list">
-                  <li class="activity-item">
-                      <div class="activity-header">
-                          <span class="activity-name">Races</span>
-                      </div>
-                      <p class="activity-description">
-                        <ul>
-                          <li>02/07/26 Barebells San Francisco 5K 24:26</li>
-                          <li>11/16/25 Berkeley Half Marathon 1:49:39</li>
-                          <li>07/26/25 San Francisco Half Marathon (City Half) 1:59:38</li>
-                        </ul>
-                      </p>
-                  </li>
-                <p><a href="https://www.strava.com/athletes/oliviaguo8" target="_blank">Strava</a></p>
-              </ul>
+            <div class="activity-list">
+            <div class="activity-item">
+                <span class="activity-name">Races</span>
+                <ul>
+                    <li>02/07/26 Barebells San Francisco 5K 24:26</li>
+                    <li>11/16/25 Berkeley Half Marathon 1:49:39</li>
+                    <li>07/26/25 San Francisco Half Marathon (City Half) 1:59:38</li>
+                </ul>
+            </div>
+            </div>
+            <p><a href="https://www.strava.com/athletes/oliviaguo8" target="_blank">Strava</a></p>
         </div>
     </main>
 </body>

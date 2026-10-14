@@ -203,3 +203,34 @@ main ul.activity-list, main ul.service-list { list-style: none; padding-left: 0;
 .xp-main { color: var(--ink); }
 .xp-main em { color: var(--ink-soft); }
 .xp-extra { color: var(--ink-faint); font-size: 0.88rem; margin-left: 0.35rem; }
+
+.xp-sub { display: block; color: var(--ink-faint); font-size: 0.88rem; margin-top: 0.1rem; }
+.xp-sub a { font-weight: 500; }
+.xp-note { font-size: 0.9rem; color: var(--ink-faint); margin: -0.4rem 0 0.4rem; }
+
+/* ---------- Hobbies dropdown ---------- */
+nav li.dropdown { position: relative; }
+.dd-toggle::after { content: "\25BE"; margin-left: 0.35rem; font-size: 0.75em; }
+nav ul.dd-menu {
+  display: none;
+  position: absolute;
+  right: 0;
+  top: calc(100% + 0.5rem);
+  z-index: 20;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 150px;
+  padding: 0.3rem;
+  list-style: none;
+  background: var(--bg);
+  border: 1px solid var(--sand-dark);
+  border-radius: 14px;
+  box-shadow: 0 8px 24px rgba(59, 55, 51, 0.1);
+}
+.dd-menu::before { content: ""; position: absolute; left: 0; right: 0; top: -0.6rem; height: 0.6rem; } /* keeps hover alive across the gap */
+.dd-menu a { white-space: nowrap; }
+nav .dropdown.open .dd-menu { display: flex; }            /* tap to open on touch screens */
+@media (hover: hover) {
+  nav .dropdown:hover .dd-menu,
+  nav .dropdown:focus-within .dd-menu { display: flex; }  /* hover / keyboard on desktop */
+}

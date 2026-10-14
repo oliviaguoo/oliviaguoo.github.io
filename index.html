@@ -4,8 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Olivia Guo</title>
-    <link href="https://fonts.googleapis.com/css2?family=Canadienne+Brusher&family=Inter:wght@300;400;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=4">
 </head>
 <body>
     <header>
@@ -16,32 +15,39 @@
                     <li><a href="guo-olivia-resume.pdf" target="_blank">Resume</a></li>
                     <li><a href="experience.html">Experience</a></li>
                     <li><a href="courses.html">Courses</a></li>
-                    <li><a href="extra.html">Extra</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dd-toggle" aria-haspopup="true"
+                           onclick="if(!matchMedia('(hover:hover)').matches){this.parentNode.classList.toggle('open')}return false">Hobbies</a>
+                        <ul class="dd-menu">
+                            <li><a href="athletics.html">Athletics</a></li>
+                            <li><a href="reads.html">Reads</a></li>
+                        </ul>
+                    </li>
                 </ul>
             </nav>
         </div>
     </header>
-    
+
     <main>
         <div class="intro-section">
             <div class="intro-top">
                 <img class="profile-photo" src="photo.jpeg" alt="Olivia Guo">
                 <h1>Olivia Guo</h1>
             </div>
-            <p>I'm an undergraduate @ <a href="https://www.berkeley.edu/" target="_blank"><u>UC Berkeley</u></a> studying EECS (<a href="https://eecs.berkeley.edu/" target="_blank"><u>electrical engineering & computer science</u></a>) and <a href="https://bioeng.berkeley.edu/" target="_blank"><u>Bioengineering</u></a>.</p>
+            <p>I'm an undergraduate @ <a href="https://www.berkeley.edu/" target="_blank"><u>UC Berkeley</u></a> studying EECS (<a href="https://eecs.berkeley.edu/" target="_blank"><u>electrical engineering &amp; computer science</u></a>) and <a href="https://bioeng.berkeley.edu/" target="_blank"><u>Bioengineering</u></a>.</p>
             <p>I'm interested in hardware systems, project management, and social impact.</p>
             <p>Currently, I am...</p>
-                <ul>
-                    <li>designing a preamplifier @ <a href="https://bisl.studentorg.berkeley.edu/" target="_blank"><u>Berkeley Imaging Systems Laboratory</u></a>.</li>
-                    <li>teaching assistant for <a href="https://cs61a.org/fa26/" target="_blank"><u>CS61A: Stucture & Interpretation of Computer Programs</u></a>.</li>
-                    <li>president & outside hitter for the <a href="https://www.calclubvolleyball.com/" target="_blank"><u>Cal Women's Club Volleyball</u></a> team.</li> 
-                </ul>
+            <ul>
+                <li>designing a preamplifier @ <a href="https://bisl.studentorg.berkeley.edu/" target="_blank"><u>Berkeley Imaging Systems Laboratory</u></a>.</li>
+                <li>teaching assistant for <a href="https://cs61a.org/fa26/" target="_blank"><u>CS61A: Structure &amp; Interpretation of Computer Programs</u></a>.</li>
+                <li>president &amp; outside hitter for the <a href="https://www.calclubvolleyball.com/" target="_blank"><u>Cal Women's Club Volleyball</u></a> team.</li>
+            </ul>
             <p>Previously, I was...</p>
-                <ul>
-                    <li>Software Engineering Intern @ <a href="https://www.pfizer.com/" target="_blank"><u>Pfizer</u></a>.</li>
-                    <li>R&D Systems Engineering Intern @ <a href="https://spirorobotics.com/" target="_blank"><u>Spiro Robotics</u></a>.</li>
-                    <li>DNA nanomaterials researcher @ <a href="https://tilabberkeley.com/" target="_blank"><u>Ti Lab</u></a>.</li>
-                </ul>
+            <ul>
+                <li>Software Engineering Intern @ <a href="https://www.pfizer.com/" target="_blank"><u>Pfizer</u></a>.</li>
+                <li>R&amp;D Systems Engineering Intern @ <a href="https://spirorobotics.com/" target="_blank"><u>Spiro Robotics</u></a>.</li>
+                <li>DNA nanomaterials researcher @ <a href="https://tilabberkeley.com/" target="_blank"><u>Ti Lab</u></a>.</li>
+            </ul>
             <p>In my free time, I like to <a href="athletics.html" target="_blank">play volleyball</a>, <a href="athletics.html" target="_blank">run long distances</a>, and <a href="reads.html" target="_blank">read historical fiction</a>.</p>
 
             <p>oliviaguo8@berkeley.edu | <a href="https://www.linkedin.com/in/oliviaguo8/" target="_blank">LinkedIn</a> | Last Updated: 10/13/2026</p>
